@@ -148,6 +148,10 @@ p {
     margin: 0 10px;
 }
 
+.sobre-info iframe{    
+    background: var(--branco);
+}
+
 .sobre-info h1{
     font-size: 3em;   
     color: var(--branco);

@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap');
+
+:root {
+    --branco: #f4faff;
+    --azul-escuro: #40476d;
+    --azul-claro: #98dfea;
+    --verde : #07beb8;
+    --cinza : #dee7e7;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font: 400 14px Roboto Mono, sans-serif;
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;    
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    width: 300px;
+}
+
+.menu-bg {
+    background: var(--branco);
+    transition:all 1.3s ease;
+}
+.menu{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.menu a{
+    color: var(--azul-escuro);
+}
+
+.menu .ativo{
+    background: var(--verde);
+}
+
+.menu-logo a{
+    font-size: 2.25em;
+    font-weight: bold;
+    margin: 0px 10px;
+}
+
+.menu-logo img{
+    width: 45px;
+}
+
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-nav a {
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: var(--azul-claro);
+}
+
+
+/*Home*/
+.home-bg{
+    width: 100%;
+    background: var(--azul-escuro);
+    transition:all 1.3s ease;
+}
+.home {
+    /* border-top: 2px solid var(--azul-escuro); */
+    border-bottom: 2px solid var(--verde);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-info{    
+    margin: 0 10px;
+}
+
+.home-info h1{
+    font-size: 3em;   
+    color: var(--branco);
+}
+
+.home-info p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: var(--cinza);
+}
+
+.home-img{
+    max-width: 480px;
+    padding: 20px;   
+}
+
+
+/*sobre*/
+.sobre-bg{
+    width: 100%;
+    background: var(--azul-escuro);
+    transition:all 1.3s ease;
+    min-height: calc(100vh - 143px);
+}
+
+.sobre {
+    border-top: 2px solid var(--verde);
+    border-bottom: 2px solid var(--verde);
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sobre-info{    
+    margin: 0 10px;
+}
+
+.sobre-info h1{
+    font-size: 3em;   
+    color: var(--branco);
+}
+
+.sobre-info p{
+    text-align: justify;
+    min-width: 100%;
+    font-size: 1em;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    color: var(--cinza);
+}
+
+.sobre-img{
+    max-width: 300px;
+    min-width: 200px;
+    padding: 20px; 
+}
+
+
+/*Servicos*/
+.servicos-bg{
+    width: 100%;
+    background: var(--branco);
+    
+}
+
+.servicos {
+    /* border-top: 2px solid var(--azul-escuro); */
+    border-bottom: 2px solid var(--azul-escuro);
+    max-width: 960px;   
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicos-info{    
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.servicos-info h1{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: var(--azul-escuro);
+}
+
+.servicos-info p{
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: var(--azul-escuro);
+}
+
+.servicos-img{
+    flex-grow: 1;
+    max-width: 600px;
+    margin: 0 10px;
+}
+
+
+/*noticias*/
+
+.noticias-bg{
+    width: 100%;    
+    background: var(--cinza);
+    min-height: calc(100vh - 143px);
+    
+}
+
+.noticias-container{
+    border-bottom: 2px solid var(--verde);
+    max-width: 960px;
+    
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.noticias-item{
+    max-width: 320px;
+    margin: 10px 10px 60px 10px;
+    min-width: 175px;
+}
+
+.noticias-item img{
+    max-width: 320px;
+    min-width: 175px;
+}
+
+.noticias-item h2{
+    font-size: 1.5em;
+    color: var(--azul-escuro);
+    padding: 10px 0px;
+}
+
+.linha {
+    border-top: 8px solid var(--verde)
+}
+
+
+.footer {
+    display: flex;
+    background: var(--azul-escuro);
+    height: 70px;
+    align-items: center;    
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 1.25em;
+    color: var(--branco);
+}
+
+.footer-branco {
+    display: flex;
+    background: var(--cinza);
+    height: 70px;
+    align-items: center;    
+}
+.footer-branco p {
+    flex: 1;
+    text-align: center;
+    font-size: 1.25em;
+    color: var(--azul-escuro);
+}
+
+
